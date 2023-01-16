@@ -1,0 +1,11 @@
+.wpcf7-submit {
+  display: none;
+}
+
+.recaptcha-btn {
+  display: block;
+}
+
+.grecaptcha-badge {
+  display: none;
+}
