@@ -5,7 +5,9 @@ import "./resetsenha.css"
 function ResetSenha(){
   return <div className="d-flex align-items-center text-center form-container">
     <form className="form-signin">
-      <img className="mb-4" src="/Images/logo-small.svg" />
+      <Link to='/'>
+        <img className="mb-4" src="/Images/logo-small.svg" />
+      </Link>
       <h1 className="h3 mb-3 fw-normal">Recuperar Senha</h1>
 
       <div className="form-floating">
