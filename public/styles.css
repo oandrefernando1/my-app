@@ -6,14 +6,17 @@ h5 {
   line-height: 1.5;
 }
 
-
+/* NAVBAR */
 
 .navbar {
   background-color: #010020;
 }
 
-/* BANNER */
+.nav-link {
+  color: #fff;
+}
 
+/* BANNER */
 
 
 #banner {
@@ -39,7 +42,23 @@ h5 {
 
 #features img {
   margin-bottom: 10px;
-  width: 300px;
+  width: 200px;
   display: inline-block;
 }
 
+#testemunho {
+  background-color: #f3f3f3;
+  color: #323338;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+#testemunho img {
+  border-radius: 50%;
+  width: 10%;
+  margin: 20px;
+}
+
+#grafo{
+  color: #ffbf01;
+}
