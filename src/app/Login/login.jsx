@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link} from 'react-router-dom';
+import {Link, Navigate} from 'react-router-dom';
 import "./login.css"
 
 import firebase from '../Config/firebase'
@@ -12,18 +12,16 @@ function Login(){
   const [senha, setSenha] = useState('');
   const [sucesso, setSucesso] = useState('');
 
-
-
   function LoginUsuario(){
      
     const auth = getAuth();
-          signInWithEmailAndPassword(auth,email, senha)
-    .then(function(firebaseUser){
-      setSucesso('S')
+          signInWithEmailAndPassword(auth, email, senha)
+    .then((userCredential) => {
+      setSucesso('S');
 
     })
     .catch(function(error){
-      setSucesso('N')
+      setSucesso('N');
     });
   }
 
@@ -53,10 +51,8 @@ function Login(){
 
       <button onClick={LoginUsuario} className="w-100 btn btn-lg btn-primary" type="button">Entrar</button>
 
-      {
-        // sucesso == 1 ? faca isso : faca aquilo
-      sucesso === 'N' ? <div className="alert alert-danger mt-4" role="alert">E-mail ou senha invalida.</div> : ''
-      }
+      {sucesso === 'N' ? <div className="alert alert-danger mt-4" role="alert">E-mail ou senha invalida.</div> : ''}
+      {sucesso === 'S' ? <Navigate to='/app/home'/>: null}
 
       <div className="login-links mt-5">
         <Link to="/app/resetsenha" className="mx-3">Esqueci minha senha</Link>
