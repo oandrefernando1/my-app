@@ -8,12 +8,12 @@ function Testemunho(){
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="5000">
               <h2>Exelente ferrametnea para acompanhamento do dia a dia, sendo flexivel o sulficiente para</h2>
-              <img src="Images/cliente.jpg"/>
+              <img src="Images/cliente.jpg" alt="Cliente andre"/>
               <em>Andre Fernando - Curitiba</em>
             </div>
             <div className="carousel-item" data-bs-interval="5000">
               <h2>Exelente ferrametnea para acompanhamento do dia a dia, sendo flexivel o sulficiente para</h2>
-              <img src="Images/cliente.jpg" />
+              <img src="Images/cliente.jpg" alt="cliente joao"/>
               <em>Andre Fernando - Curitiba</em>
             </div>
           </div>

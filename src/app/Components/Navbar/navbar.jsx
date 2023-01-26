@@ -6,8 +6,8 @@ function Navbar(){
   return <nav className="navbar fixed-top navbar-expand-md navbar-dark">
 
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          <img src="/Images/logo-small.svg" alt="" width="" height="38"/>
+        <a className="navbar-brand" href="/#">
+          <img src="/Images/logo-small.svg" alt="Logo grafo" height="38"/>
         </a>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

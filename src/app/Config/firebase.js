@@ -1,6 +1,9 @@
 import { initializeApp } from 'firebase/app';
 
 
+import { getFirestore } from 'firebase/firestore'
+
+
 const firebaseConfig = {
   apiKey: 'AIzaSyC2Y2UIQ_og9SiJGAW5Q9X1lEZX_XWyeh0',
   authDomain: 'grafo-crm.firebaseapp.com',
@@ -11,6 +14,9 @@ const firebaseConfig = {
   measurementId: 'G-PCH0V00PST',
 }
 
-const app = initializeApp(firebaseConfig);
-export default app
 
+//inicializa firebase
+const app = initializeApp(firebaseConfig);
+
+//inicializa firestore
+export const db = getFirestore(app)

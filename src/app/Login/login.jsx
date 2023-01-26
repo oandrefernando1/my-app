@@ -36,7 +36,7 @@ function Login(){
   return <div className="d-flex align-items-center text-center form-container">
     <form className="form-signin">
       <Link to='/'>
-        <img className="mb-4" src="Images/logo-small.svg" />
+        <img className="mb-4" src="Images/logo-small.svg" alt="logo pequena" />
       </Link>
       <h1 className="h3 mb-3 fw-normal">Login</h1>
 

@@ -5,8 +5,8 @@ function Menu(){
     return   <nav className="navbar fixed-top navbar-expand-md navbar-dark">
 
     <div className="container">
-          <a className="navbar-brand" href="#">
-            <img src="Images/logo-small.svg" height="35"/>
+          <a className="navbar-brand" href="/#">
+            <img src="Images/logo-small.svg" alt="logo pequena" height="35"/>
           </a>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,16 +16,16 @@ function Menu(){
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">Home</a>
+                <a className="nav-link" aria-current="page" href="/#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">Institucional</a>
+                <a className="nav-link" aria-current="page" href="/#">Institucional</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">Produtos</a>
+                <a className="nav-link" aria-current="page" href="/#">Produtos</a>
               </li>
               <li className="nav-item">
-                <a id="text1" className="nav-link" aria-current="page" href="#">Seja um assessor</a>
+                <a id="text1" className="nav-link" aria-current="page" href="/#">Seja um assessor</a>
               </li>
               <li className="nav-item">
                 <Link to="/app" className="nav-link" aria-current="page">Fazer Login</Link>

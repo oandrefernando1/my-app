@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {Link, Navigate} from 'react-router-dom';
 import "./novaconta.css"
 
-
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 function NovaConta(){
@@ -47,7 +46,7 @@ function NovaConta(){
   return <div className="d-flex align-items-center text-center form-container">
     <form className="form-signin">
        <Link to='/'>
-        <img className="mb-4" src="/Images/logo-small.svg" /> 
+        <img className="mb-4" src="/Images/logo-small.svg" alt="logo pequena"/> 
       </Link>
       <h1 className="h3 mb-3 fw-normal">Criar Conta</h1>
 
